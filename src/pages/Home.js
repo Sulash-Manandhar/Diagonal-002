@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import ResponsiveMenu from "../components/ResponsiveMenu";
 import "../stylesheet/stylesheet.css";
 
 const Home = () => {
+  const [menu, setMenu] = useState(false);
+
+  const toggleNavbar = () => {
+    menu ? setMenu(false) : setMenu(true);
+    console.log(menu);
+  };
   return (
     <div>
-      <Navbar />
+      <ResponsiveMenu toggleNavbar={toggleNavbar} />
+      {menu ? <Navbar /> : null}
     </div>
   );
 };
