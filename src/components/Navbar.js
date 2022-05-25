@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillHome, AiFillSetting, AiOutlineMenu } from "react-icons/ai";
+import { AiFillHome, AiFillSetting } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   //toggle dropdown
@@ -27,16 +28,16 @@ const Navbar = () => {
         <nav>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="/tab01">TAB</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/tab01">TAB</a>
+              <NavLink to="/shop">Shop</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/tab01">TAB</a>
+              <NavLink to="/sell">Sell</NavLink>
             </li>
             <li className="nav-item">
-              <a href="/tab01">TAB</a>
+              <NavLink to="/about">About</NavLink>
             </li>
           </ul>
         </nav>
