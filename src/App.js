@@ -17,13 +17,17 @@ const App = () => {
     <Router>
       <div className="body">
         <ResponsiveMenu toggleNavbar={toggleNavbar} />
-        {menu ? <Navbar /> : null}
-        <Routes>
-          <Route path="/" exact element={Home} />
-          <Route path="/shop" element={Shop} />
-          <Route path="/sell" element={Sell} />
-          <Route path="/about" element={About} />
-        </Routes>
+        <div className="display-flex">
+          <div>{menu ? <Navbar /> : null}</div>
+          <div>
+            <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/sell" element={<Sell />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+        </div>
       </div>
     </Router>
   );
