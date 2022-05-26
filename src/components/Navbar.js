@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillHome, AiFillSetting } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ statesDescription }) => {
   //toggle dropdown
   const toggleDropdown = () => {
     const dropdown = document.getElementById("dropdown");
@@ -22,23 +22,18 @@ const Navbar = () => {
       <header className="header">
         {/* Logo container  */}
         <div>
-          <AiFillHome className="icon" />
+          <NavLink to="/">
+            <AiFillHome className="icon" />
+          </NavLink>
         </div>
         {/* List container  */}
         <nav>
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/shop">Shop</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/sell">Sell</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/about">About</NavLink>
-            </li>
+            {statesDescription.map((item) => (
+              <li className="nav-item" key={item.id}>
+                <NavLink to={"/" + item.state}>{item.state}</NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
         {/* Setting dropdown  */}

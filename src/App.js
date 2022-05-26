@@ -4,27 +4,49 @@ import ResponsiveMenu from "./components/ResponsiveMenu";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import Sell from "./pages/Sell";
-import About from "./pages/About";
+import States from "./pages/States";
+import District from "./pages/District";
 
 const App = () => {
   const [menu, setMenu] = useState(true);
   const toggleNavbar = () => {
     menu ? setMenu(false) : setMenu(true);
   };
+
+  const statesDescription = [
+    {
+      id: 1,
+      state: "Bagmati",
+      districts: ["Bhaktapur", "Kathmandu"],
+    },
+    {
+      id: 2,
+      state: "Gandaki",
+      districts: ["Gorkha", "Mustang"],
+    },
+    {
+      id: 3,
+      state: "Lumbini",
+      districts: ["Bardiya", "Palpa"],
+    },
+  ];
   return (
     <Router>
-      <div className="body">
+      <div className="body ">
         <ResponsiveMenu toggleNavbar={toggleNavbar} />
         <div className="display-flex">
-          <div>{menu ? <Navbar /> : null}</div>
+          <div>
+            {menu ? <Navbar statesDescription={statesDescription} /> : null}
+          </div>
           <div>
             <Routes>
               <Route path="/" exact element={<Home />} />
-              <Route path="/shop" element={<Shop />} />
-              <Route path="/sell" element={<Sell />} />
-              <Route path="/about" element={<About />} />
+              <Route
+                path="/:states"
+                exact
+                element={<States statesDescription={statesDescription} />}
+              />
+              <Route path="/:states/:district" exact element={<District />} />
             </Routes>
           </div>
         </div>

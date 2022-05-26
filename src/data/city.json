@@ -1,5 +1,5 @@
 {
-  "kathmandu": {
+  "Kathmandu": {
     "id": 1,
     "country": "Nepal",
     "province": "Bagmati",
@@ -42,7 +42,7 @@
       ]
     }
   },
-  "bhaktapur": {
+  "Bhaktapur": {
     "id": 2,
     "country": "Nepal",
     "province": "Bagmati",
@@ -73,11 +73,11 @@
       ]
     }
   },
-  "Illam": {
+  "Gorkha": {
     "id": 3,
     "country": "Nepal",
-    "province": "illam",
-    "province_number": 7,
+    "province": "Gandaki",
+    "province_number": 4,
     "wards": 29,
     "zip": 40000,
     "area": 413.69,
@@ -98,11 +98,11 @@
       ]
     }
   },
-  "Sikim": {
+  "Mustang": {
     "id": 4,
     "country": "Nepal",
-    "province": "sikim",
-    "province_number": 3,
+    "province": "Gandaki",
+    "province_number": 4,
     "wards": 28,
     "zip": 27800,
     "area": 413.69,
@@ -135,11 +135,11 @@
       ]
     }
   },
-  "Biratnagar": {
+  "Bardiya": {
     "id": 5,
     "country": "Nepal",
-    "province": "Morang",
-    "province_number": 1,
+    "province": "Lumbini",
+    "province_number": 5,
     "wards": 20,
     "zip": 38900,
     "area": 413.69,
@@ -166,11 +166,11 @@
       ]
     }
   },
-  "Solukhumbu": {
+  "Palpa": {
     "id": 6,
     "country": "Nepal",
-    "province": "No name",
-    "province_number": 1,
+    "province": "Lumbini",
+    "province_number": 5,
     "wards": 13,
     "zip": 14690,
     "area": 113.69,
