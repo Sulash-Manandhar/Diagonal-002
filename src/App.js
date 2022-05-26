@@ -13,6 +13,38 @@ const App = () => {
     menu ? setMenu(false) : setMenu(true);
   };
 
+  const visitedPlace = [
+    {
+      id: 1,
+      districts: "Bhaktapur",
+      visited: false,
+    },
+    {
+      id: 2,
+      districts: "Kathmandu",
+      visited: false,
+    },
+    {
+      id: 3,
+      districts: "Gorkha",
+      visited: false,
+    },
+    {
+      id: 4,
+      districts: "Mustang",
+      visited: false,
+    },
+    {
+      id: 5,
+      districts: "Bardiya",
+      visited: false,
+    },
+    {
+      id: 6,
+      districts: "Palpa",
+      visited: false,
+    },
+  ];
   const statesDescription = [
     {
       id: 1,
@@ -46,7 +78,11 @@ const App = () => {
                 exact
                 element={<States statesDescription={statesDescription} />}
               />
-              <Route path="/:states/:district" exact element={<District />} />
+              <Route
+                path="/:states/:district"
+                exact
+                element={<District visitedPlace={visitedPlace} />}
+              />
             </Routes>
           </div>
         </div>

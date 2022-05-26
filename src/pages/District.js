@@ -4,6 +4,7 @@ import cities from "../data/city.json";
 
 const District = () => {
   const { states, district } = useParams(); //name of state and district
+
   let districtData = cities[district]; //district data
 
   // @desc handle visited value change
