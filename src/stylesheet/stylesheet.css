@@ -197,6 +197,7 @@ nav {
 .flex {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 5px;
 }
 .flex div {
   margin: 0px 10px;
@@ -212,4 +213,15 @@ nav {
 .small {
   font-size: 16px;
   opacity: 80%;
+}
+
+.link-design {
+  text-decoration: none;
+  font-size: 18px;
+  color: #26282b;
+  font-weight: 500;
+}
+
+.no-decoration {
+  text-decoration: none;
 }

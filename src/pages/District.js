@@ -3,33 +3,27 @@ import { useParams, NavLink } from "react-router-dom";
 import cities from "../data/city.json";
 
 const District = () => {
-  const { states, district } = useParams();
+  const { states, district } = useParams(); //name of state and district
+  let districtData = cities[district]; //district data
 
-  const citiesArray = Object.entries(cities);
-  let districtData = [];
-
-  for (let i = 0; i < citiesArray.length; i++) {
-    if (citiesArray[i][0] === district) {
-      districtData = citiesArray[i][1];
-      break;
-    }
-  }
-
+  // @desc handle visited value change
   const handleVisited = () => {
-    for (let i = 0; i < citiesArray.length; i++) {
-      if (citiesArray[i][0] === district) {
-        citiesArray[i][1].visited = !citiesArray[i][1].visited;
-        break;
-      }
-    }
-    console.log(citiesArray);
+    let temp = !cities[district].visited;
+    cities[district].visited = temp;
+    console.log(
+      "Logged Output : cities[district].visited",
+      cities[district].visited
+    );
   };
 
   return (
     <div className="container-fluid ">
       <h2>
         Welcome to the {district} district of
-        <NavLink to={`/${states}`}> {states} </NavLink>
+        <NavLink to={`/${states}`} className="no-decoration">
+          {" "}
+          {states}{" "}
+        </NavLink>
         district.
       </h2>
 

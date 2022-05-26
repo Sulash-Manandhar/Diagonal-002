@@ -11,12 +11,14 @@ const States = ({ statesDescription }) => {
   return (
     <div className="container-fluid">
       <h2>Welcome to {states}. </h2>
-      <span>Click a district to see their information.</span>
+      <span className="small">Click a district to see their information.</span>
       <div>
         <ul>
           {districtArray[0].districts.map((item, index) => (
             <li key={index}>
-              <NavLink to={`/${states}/${item}`}>{item} District</NavLink>
+              <NavLink to={`/${states}/${item}`} className="link-design">
+                {item} District
+              </NavLink>
             </li>
           ))}
         </ul>

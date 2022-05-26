@@ -19,7 +19,11 @@
     "attractions": {
       "zoo": true,
       "qfx": true,
-      "stadium": ["Shankhadhar Stadium", "Buddha Stadium", "Balaju Stadium"],
+      "stadium": [
+        "Shankhadhar Stadium",
+        "Buddha Stadium",
+        "Balaju Stadium"
+      ],
       "parks": [
         {
           "id": 1,
@@ -43,35 +47,7 @@
     }
   },
   "Bhaktapur": {
-    "id": 2,
-    "country": "Nepal",
-    "province": "Bagmati",
-    "province_number": 3,
-    "wards": 18,
-    "zip": 49610,
-    "area": 313.1,
-    "population": 9120372,
-    "visited": false,
-    "hotel": ["Samsara Boutique Hotel", "Hotel Yak and Yeti"],
-    "attractions": {
-      "zoo": true,
-      "qfx": true,
-      "stadium": [],
-      "parks": [
-        {
-          "id": 1,
-          "name": "Mahan Park",
-          "address": "highway",
-          "image": "https://th.bing.com/th/id/R.6f0e2dcc7d02ba496029ea1ee7358629?rik=TEqHD2XS3mOBiw&pid=ImgRaw&r=0"
-        },
-        {
-          "id": 2,
-          "name": "Namahan park",
-          "address": "nepbato",
-          "image": "https://th.bing.com/th/id/R.6f0e2dcc7d02ba496029ea1ee7358629?rik=TEqHD2XS3mOBiw&pid=ImgRaw&r=0"
-        }
-      ]
-    }
+    "visited": true
   },
   "Gorkha": {
     "id": 3,
@@ -87,7 +63,10 @@
     "attractions": {
       "zoo": true,
       "qfx": true,
-      "stadium": ["Balaju Stadium", "Ramro Stadium"],
+      "stadium": [
+        "Balaju Stadium",
+        "Ramro Stadium"
+      ],
       "parks": [
         {
           "id": 1,
@@ -118,7 +97,11 @@
     "attractions": {
       "zoo": true,
       "qfx": true,
-      "stadium": ["Shankhadhar Stadium", "Buddha Stadium", "Balaju Stadium"],
+      "stadium": [
+        "Shankhadhar Stadium",
+        "Buddha Stadium",
+        "Balaju Stadium"
+      ],
       "parks": [
         {
           "id": 1,
@@ -145,11 +128,18 @@
     "area": 413.69,
     "population": 8392721,
     "visited": false,
-    "hotel": ["Samsara Boutique Hotel", "The Soaltee Kathmandu"],
+    "hotel": [
+      "Samsara Boutique Hotel",
+      "The Soaltee Kathmandu"
+    ],
     "attractions": {
       "zoo": true,
       "qfx": true,
-      "stadium": ["Shankhadhar Stadium", "Buddha Stadium", "Balaju Stadium"],
+      "stadium": [
+        "Shankhadhar Stadium",
+        "Buddha Stadium",
+        "Balaju Stadium"
+      ],
       "parks": [
         {
           "id": 1,
@@ -186,7 +176,11 @@
     "attractions": {
       "zoo": true,
       "qfx": true,
-      "stadium": ["Shankhadhar Stadium", "Buddha Stadium", "Balaju Stadium"],
+      "stadium": [
+        "Shankhadhar Stadium",
+        "Buddha Stadium",
+        "Balaju Stadium"
+      ],
       "parks": []
     }
   }
