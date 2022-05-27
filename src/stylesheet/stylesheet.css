@@ -99,6 +99,83 @@ nav {
   margin-left: 10px;
 }
 
+.grid-display {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: auto 1fr;
+  padding: 0px;
+  margin-top: 20px;
+  /* border-bottom: 1px solid black; */
+}
+
+.grid-title {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1.8px;
+}
+
+.bg-color {
+  background-color: #353941;
+  color: white;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 18px;
+  /* background-color: red; */
+  text-transform: capitalize;
+}
+
+.grid-heading {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-size: 28px;
+}
+
+.grid-list {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+.flex div {
+  margin: 0px 10px;
+}
+
+.checkbox-container {
+  font-size: 20px;
+}
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.small {
+  font-size: 16px;
+  opacity: 80%;
+}
+
+.link-design {
+  text-decoration: none;
+  font-size: 18px;
+  color: #26282b;
+  font-weight: 500;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.second {
+  height: 200px;
+}
 @media only screen and (max-width: 600px) {
   .display-flex {
     display: flex;
@@ -155,73 +232,4 @@ nav {
     margin: 5px;
     overflow: hidden;
   }
-}
-
-.grid-display {
-  display: grid;
-  gap: 2px;
-  grid-template-columns: auto 1fr;
-  padding: 0px;
-  margin-top: 20px;
-  border-bottom: 1px solid black;
-}
-
-.grid-title {
-  font-weight: bold;
-  font-size: 24px;
-  letter-spacing: 1.8px;
-}
-
-.bg-color {
-  background-color: #353941;
-  color: white;
-}
-
-.grid-item {
-  padding: 5px;
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-.grid-heading {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-  font-size: 28px;
-  border-bottom: 1px solid black;
-}
-
-.grid-list {
-  list-style-type: none;
-}
-
-.flex {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-}
-.flex div {
-  margin: 0px 10px;
-}
-
-.checkbox-container {
-  font-size: 20px;
-}
-.checkbox-container input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.small {
-  font-size: 16px;
-  opacity: 80%;
-}
-
-.link-design {
-  text-decoration: none;
-  font-size: 18px;
-  color: #26282b;
-  font-weight: 500;
-}
-
-.no-decoration {
-  text-decoration: none;
 }

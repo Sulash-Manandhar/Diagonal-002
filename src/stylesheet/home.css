@@ -1,0 +1,84 @@
+.flex-display {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px;
+}
+
+.flex-display .head {
+  width: 50%;
+  margin: 10px 0px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-group button {
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0px 10px;
+}
+
+.btn-group button:hover {
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #008b8b;
+}
+.btn-danger {
+  background-color: tomato;
+}
+.btn-secondary {
+  background-color: grey;
+}
+
+/* Register page css  */
+.grid {
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 55%;
+  box-shadow: 2px 4px 10px 1px grey;
+}
+
+header {
+  text-align: center;
+}
+.hr {
+  width: 80%;
+  margin: auto auto;
+}
+.grid div {
+  width: 100%;
+}
+
+.my {
+  margin-top: 10px;
+}
+.my div {
+  width: 100%;
+}
+
+.form-label {
+  width: 100%;
+  font-size: 18px;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.mx {
+  margin: 0px 5px;
+}

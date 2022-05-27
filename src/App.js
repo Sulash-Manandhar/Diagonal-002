@@ -6,9 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import States from "./pages/States";
 import District from "./pages/District";
+import About from "./pages/About";
 
 const App = () => {
   const [menu, setMenu] = useState(true);
+
   const toggleNavbar = () => {
     menu ? setMenu(false) : setMenu(true);
   };
@@ -72,7 +74,11 @@ const App = () => {
           </div>
           <div>
             <Routes>
-              <Route path="/" exact element={<Home />} />
+              <Route
+                path="/"
+                exact
+                element={<Home visitedPlace={visitedPlace} />}
+              />
               <Route
                 path="/:states"
                 exact
@@ -83,6 +89,7 @@ const App = () => {
                 exact
                 element={<District visitedPlace={visitedPlace} />}
               />
+              <Route path="/about" exact element={<About />} />
             </Routes>
           </div>
         </div>

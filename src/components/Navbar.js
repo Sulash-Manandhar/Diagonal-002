@@ -51,7 +51,7 @@ const Navbar = ({ statesDescription }) => {
           <div className="dropdown-container" id="dropdown">
             <ul className="dropdown-menu">
               <li className="dropdown-item">
-                <a href="/hello">SUB1</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li className="dropdown-item">
                 <a href="/hello">SUB2</a>
